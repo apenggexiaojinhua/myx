@@ -1,0 +1,10 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8001/eureka/
+spring:
+  application:
+    name: order-service-9001
