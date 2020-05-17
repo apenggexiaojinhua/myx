@@ -1,0 +1,22 @@
+encryptInfo: true
+# 服务配置
+server:
+  port: 9000
+
+# Spring Config
+spring:
+  # 服务注册中心配置
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+# 根据报名自定义日主输出级别
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+    org.springframework.cloud.gateway.route: debug
+ 
